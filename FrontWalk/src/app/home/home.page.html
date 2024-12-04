@@ -1,20 +1,89 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-app>
+  <!-- Menu -->
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-list>
+        <ion-item button routerLink="/start-ing">
+          <ion-icon slot="start" name="walk"></ion-icon>
+          <ion-label>Start - Ing</ion-label>
+        </ion-item>
+        <ion-item button routerLink="/sett-ing">
+          <ion-icon slot="start" name="cog"></ion-icon>
+          <ion-label>Sett - Ing</ion-label>
+        </ion-item>
+        <ion-item button routerLink="/results">
+          <ion-icon slot="start" name="document-attach"></ion-icon>
+          <ion-label>Results</ion-label>
+        </ion-item>
+        <ion-item button routerLink="/home">
+          <ion-icon slot="start" name="home"></ion-icon>
+          <ion-label>Home</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <!-- Main Content -->
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title class="titulo">WALK - ING</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <div class="center-content">
+        <h1>BIENVENIDO</h1>
+        <ion-button expand="block" fill="outline" size="large">
+          <ion-icon name="play-outline" slot="start"></ion-icon>
+          START
+        </ion-button>
+        <ion-button expand="block" fill="outline" size="large">
+          <ion-icon name="document-text-outline" slot="start"></ion-icon>
+          RESULTS
+        </ion-button>
+      </div>
+    </ion-content>
   </div>
-</ion-content>
+</ion-app>
+
+<style>
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+  .center-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    text-align: center;
+    gap: 20px;
+  }
+
+  h1 {
+    margin-bottom: 70px;
+    font-size: 40px;
+  }
+
+  ion-button {
+    width: 80%;
+    height: 200px;
+  }
+
+  .titulo{
+    font-size: 25px;
+  }
+
+  *{
+    font-family: "Montserrat";
+    font-optical-sizing: auto;
+  }
+</style>
