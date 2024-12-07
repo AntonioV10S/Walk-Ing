@@ -1,0 +1,67 @@
+<ion-menu content-id="main-content" id="custom-menu">
+  <ion-header>
+    <ion-toolbar class="toolbarMenu"> Menu </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-list>
+      <ion-item button routerLink="/start-ing">
+        <ion-icon slot="start" name="walk"></ion-icon>
+        <ion-label>Start - Ing</ion-label>
+      </ion-item>
+      <ion-item button routerLink="/sett-ing">
+        <ion-icon slot="start" name="cog"></ion-icon>
+        <ion-label>Sett - Ing</ion-label>
+      </ion-item>
+      <ion-item button routerLink="/results">
+        <ion-icon slot="start" name="document-attach"></ion-icon>
+        <ion-label>Results</ion-label>
+      </ion-item>
+      <ion-item button routerLink="/home">
+        <ion-icon slot="start" name="home"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar class="toolbarP">
+      <ion-buttons class="sanduche" slot="start">
+        <ion-menu-button class="menu"></ion-menu-button>
+      </ion-buttons>
+      WALK - ING
+      <ion-icon name="walk-outline"></ion-icon>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="contenedor">
+    <div class="welcome-container">
+      <h2>BIENVENIDO</h2>
+      <h3>"USUARIO"</h3>
+    </div>
+
+    <!-- Botones colocados después de la bienvenida -->
+    <ion-grid class="botones">
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" class="custom-button">
+            <ion-icon slot="start" name="walk-outline"></ion-icon>
+            INICIAR
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block" class="custom-button">
+            <ion-icon slot="start" name="navigate-outline"></ion-icon>
+            RESULTADO
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- Pie de página -->
+    <div class="footer">DERECHOS RESERVADOS 2024 ®</div>
+  </ion-content>
+</div>

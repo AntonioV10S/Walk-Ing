@@ -1,0 +1,83 @@
+/* Estilo general del contenido */
+.contenedor {
+    --background: #3a3c51;
+    color: white;
+  }
+
+  .toolbarP{ 
+    --background: #f77f00; /* Fondo del header */
+    --color: black; /* Color del texto */
+    height: 80px; /* Altura del toolbar */
+    font-size: 1.8rem; /* Tamaño del texto */
+    font-weight: bold; /* Resaltar el texto */
+    text-align: center; /* Asegurar centrado */
+    color: black; /* Color del texto */
+    display: flex; /* Habilitar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    position: relative; /* Permite superponer elementos en slots */
+  }
+  
+  .toolbarMenu{
+    --background: #ee9f4b; /* Fondo del header */
+    --color: black; /* Color del texto */
+    height: 80px; /* Altura del toolbar */
+    font-size: 1.9rem; /* Tamaño del texto */
+    font-weight: bold; /* Resaltar el texto */
+    text-align: center; /* Asegurar centrado */
+    color: black; /* Color del texto */
+    display: flex; /* Habilitar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    position: relative; /* Permite superponer elementos en slots */
+  }
+/* Cambiar el color del ícono del botón de menú */
+.menu {
+  --color: black; /* Establecer el color del ícono */
+}
+
+/* Ajuste de la posición del ícono de menú */
+.sanduche[slot="start"] {
+  position: absolute;
+  left: 16px; /* Espaciado desde el borde izquierdo */
+}
+  
+  
+  /* Contenedor de bienvenida */
+  .welcome-container {
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .welcome-container h2,
+  .welcome-container h3 {
+    font-size: 1.8rem;
+    color: white;
+    margin: 0;
+  }
+  
+  /* Estilo para los botones */
+  .botones {
+    margin: 40px 20px; /* Margen superior e inferior */
+  }
+  
+  .custom-button::part(native) {
+    background: #b3bac6; /* Color de fondo */
+    color: black; /* Color del texto */
+    border-radius: 20px 0 20px 0; /* Esquinas específicas */
+    font-size: 1.6rem;
+    height: 120px; /* Altura del botón */
+    margin: 10px 0;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #f77f00;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
