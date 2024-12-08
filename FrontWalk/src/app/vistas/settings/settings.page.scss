@@ -1,0 +1,90 @@
+/* Estilo general del contenido */
+.contenedor {
+    --background: #3a3c51;
+    color: white;
+  }
+
+  .toolbarP{ 
+    --background: #f77f00; /* Fondo del header */
+    --color: black; /* Color del texto */
+    height: 80px; /* Altura del toolbar */
+    font-size: 1.8rem; /* Tamaño del texto */
+    font-weight: bold; /* Resaltar el texto */
+    text-align: center; /* Asegurar centrado */
+    color: black; /* Color del texto */
+    display: flex; /* Habilitar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    position: relative; /* Permite superponer elementos en slots */
+  }
+  
+  .toolbarMenu{
+    --background: #ee9f4b; /* Fondo del header */
+    --color: black; /* Color del texto */
+    height: 80px; /* Altura del toolbar */
+    font-size: 1.9rem; /* Tamaño del texto */
+    font-weight: bold; /* Resaltar el texto */
+    text-align: center; /* Asegurar centrado */
+    color: black; /* Color del texto */
+    display: flex; /* Habilitar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    position: relative; /* Permite superponer elementos en slots */
+  }
+/* Cambiar el color del ícono del botón de menú */
+.menu {
+  --color: black; /* Establecer el color del ícono */
+}
+
+/* Ajuste de la posición del ícono de menú */
+.sanduche[slot="start"] {
+  position: absolute;
+  left: 16px; /* Espaciado desde el borde izquierdo */
+}
+  
+  
+  /* Contenedor de bienvenida */
+  .welcome-container {
+    text-align: center;
+    margin-top: 80px;
+  }
+  
+  .welcome-container h2{
+    font-size: 1.8rem;
+    color: white;
+    margin: 0;
+  }
+  
+  .icon-user{
+    text-align: center;
+    display: flex; /* Habilitar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+    height: 30%;
+  }
+
+  .icon-user ion-icon{
+    width: 200px;
+    height: 2000px;
+  }
+
+  .username h2{
+    text-align: center;
+    display: flex; /* Habilitar flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+    font-size: 1.8rem;
+    color: white;
+    margin: 0;
+  }
+  
+  /* Footer */
+  .footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #f77f00;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }

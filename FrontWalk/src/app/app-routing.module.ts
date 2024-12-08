@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'principal',
     loadChildren: () => import('./vistas/principal/principal.module').then( m => m.PrincipalPageModule)
+  },  {
+    path: 'settings',
+    loadChildren: () => import('./vistas/settings/settings.module').then( m => m.SettingsPageModule)
   },
+
 ];
 
 @NgModule({
