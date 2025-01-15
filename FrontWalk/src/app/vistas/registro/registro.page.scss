@@ -1,0 +1,87 @@
+/* Estilo general del contenido */
+.contenedor {
+    --background: #3a3c51;
+    color: white;
+}
+
+.toolbarP { 
+    --background: #f77f00; 
+    --color: black; 
+    height: 80px; 
+    font-size: 1.8rem; 
+    font-weight: bold; 
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+}
+
+.toolbarMenu {
+    --background: #ee9f4b; 
+    --color: black; 
+    height: 80px; 
+    font-size: 1.9rem; 
+    font-weight: bold; 
+    text-align: center; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    position: relative; 
+}
+
+.menu {
+  --color: black; 
+}
+
+.sanduche[slot="start"] {
+  position: absolute;
+  left: 16px;
+}
+
+/* Contenedor de bienvenida */
+.welcome-container {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.welcome-container h2,
+.welcome-container h3 {
+  font-size: 1.8rem;
+  color: white;
+  margin: 0;
+}
+
+/* Estilo para el formulario de login */
+.login-form {
+  margin: 20px;
+  padding: 20px;
+  background: #6c6969;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.login-form ion-item {
+  margin-bottom: 15px;
+}
+
+.login-form ion-label {
+  color: rgb(169, 160, 160);
+}
+
+.login-button {
+  --background: #f77f00;
+  --color: black;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  font-size: 0.8rem;
+  color: #f77f00;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

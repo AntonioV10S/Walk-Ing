@@ -41,25 +41,18 @@
       <h3>"USUARIO"</h3>
     </div>
 
-    <!-- Botones colocados después de la bienvenida -->
-    <ion-grid class="botones">
-      <ion-row>
-        <ion-col>
-          <ion-button expand="block" class="custom-button" >
-            <ion-icon slot="start" name="walk-outline"></ion-icon>
-            INICIAR
-          </ion-button>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <ion-button expand="block" class="custom-button">
-            <ion-icon slot="start" name="navigate-outline"></ion-icon>
-            RESULTADO
-          </ion-button>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+    <!-- Formulario de ingreso de nombre y clave -->
+    <div class="login-form">
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input type="text" clear-input="true"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Clave</ion-label>
+        <ion-input type="password" clear-input="true"></ion-input>
+      </ion-item>
+      <ion-button expand="block" class="login-button" routerLink="/principal" >Ingresar</ion-button>
+    </div>
 
     <!-- Pie de página -->
     <div class="footer">DERECHOS RESERVADOS 2024 ®</div>

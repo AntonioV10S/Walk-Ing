@@ -8,15 +8,20 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'principal',
+    redirectTo: 'registro',
     pathMatch: 'full'
   },
   {
     path: 'principal',
     loadChildren: () => import('./vistas/principal/principal.module').then( m => m.PrincipalPageModule)
-  },  {
+  },
+  {
     path: 'settings',
     loadChildren: () => import('./vistas/settings/settings.module').then( m => m.SettingsPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./vistas/registro/registro.module').then( m => m.RegistroPageModule)
   },
 
 ];
